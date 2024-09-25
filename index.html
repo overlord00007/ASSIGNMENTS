@@ -1,4 +1,84 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Company Directory Portal</h1>
+
+    <!-- Employee Registration Form -->
+    <section>
+        <h2>Employee Registration</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="HR">HR</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Marketing">Marketing</option>
+            </select><br><br>
+
+            <label for="empID">Employee ID:</label>
+            <input type="number" id="empID" name="empID"><br><br>
+
+            <label for="profilePic">Profile Picture URL:</label>
+            <input type="url" id="profilePic" name="profilePic"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Employee List -->
+    <section>
+        <h2>Employee List</h2>
+        <ol>
+            <li><a href="#">Yuvraj singh - yuvraj@example.com</a></li>
+            <li><a href="#">infomatics - infom@example.com</a></li>
+        </ol>
+    </section>
+
+    <!-- Employee Details Table -->
+    <section>
+        <h2>Employee Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Yuvraj singh</td>
+                    <td>101</td>
+                    <td>HR</td>
+                    <td><img src="pic_trulli.jpg" alt="Profile Picture" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Embedded Map -->
+    <section>
+        <h2>Company Location</h2>
+        <iframe 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d144.9630579153168!3d-37.81410797975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d9f0b1f0f0f0!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1611811234567!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+    </section>
+
+</body>
+</html><!DOCTYPE html>
 <html>
 <head>
 <style>
@@ -23,50 +103,3 @@
     text-align: center;
   }
 </style>
-</head>
-<body>
-
-<table>
-  <tr>
-    <th colspan="6">Final Exam</th>
-  </tr>
-  <tr>
-    <td class="time-cell">Time</td>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <td rowspan="5" class="home-cell">HOME</td>
-  </tr>
-  <tr>
-    <td class="time-cell">8:00 a.m.</td>
-    <td>Data Structures</td>
-    <td>Algorithms</td>
-    <td>Computer Networks</td>
-    <td>Database Systems</td>
-  </tr>
-  <tr>
-    <td class="time-cell">9:00 a.m.</td>
-    <td>Data Structures</td>
-    <td>Algorithms</td>
-    <td>Computer Networks</td>
-    <td>Database Systems</td>
-  </tr>
-  <tr>
-    <td class="time-cell">10:00 a.m.</td>
-    <td>Data Structures</td>
-    <td>Algorithms</td>
-    <td>Computer Networks</td>
-    <td>Database Systems</td>
-  </tr>
-  <tr>
-    <td class="time-cell">11:00 a.m.</td>
-    <td>Operating Systems</td>
-    <td>Artificial Intelligence</td>
-    <td>Software Engineering</td>
-    <td>Web Development</td>
-  </tr>
-</table>
-
-</body>
-</html>
