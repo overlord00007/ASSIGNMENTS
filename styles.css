@@ -1,0 +1,110 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+/* for Mobile */
+.container {
+    grid-template-areas:
+        "header"
+        "content"
+        "signup"
+        "feature1"
+        "feature2"
+        "feature3"
+        "feature4";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.header {
+    grid-area: header;
+    background-color: #87CEFA;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+    background-color: #F0F0F0;
+    padding: 20px;
+    text-align: center;
+}
+
+.signup {
+    grid-area: signup;
+    background-color: #ADD8E6;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature1 {
+    grid-area: feature1;
+    background-color: #FFD700;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature2 {
+    grid-area: feature2;
+    background-color: #BA55D3;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature3 {
+    grid-area: feature3;
+    background-color: #FF6347;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature4 {
+    grid-area: feature4;
+    background-color: #9370DB;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        grid-template-areas:
+            "header header"
+            "content content"
+            "signup feature1"
+            "feature2 feature3"
+            "feature4 feature4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .feature4 {
+        grid-column: span 2;
+    }
+}
+
+/* Desktop Layout (1025px and above) */
+@media (min-width: 1025px) {
+    .container {
+        grid-template-areas:
+            "header header header"
+            "feature1 feature2 feature3"
+            "signup signup signup"
+            "content content content";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
