@@ -157,6 +157,4 @@ footer {
     }
 }
 
-@media (min-width: 769px) andbody {
-  margin: 20px;
-}
+@media (min-width: 769px) and
